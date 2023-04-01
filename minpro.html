@@ -130,6 +130,18 @@
             left: 465px;
             top: 10px;
         }
+
+        body {
+            padding: 25px;
+            background-color: white;
+            color: black;
+            font-size: 25px;
+        }
+
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
     </style>
 </head>
 
@@ -220,6 +232,12 @@
                                                 </button>
                                             </div>
                         </ul>
+                        <script>
+                            function myFunction() {
+                                var element = document.body;
+                                element.classList.toggle("dark-mode");
+                            }
+                        </script>
                 </div>
             </div>
         </nav>
@@ -268,93 +286,59 @@
         </div>
 
         <div style="padding-top: 20px; padding-left: 30px; color: #f2f2f2;">
-        <h4>
-            Most Popular Anime
-        </h4>
-    </div>
-    <div class="card mt_24" style="width: 18rem;" style="background-color: #333333;">
-        <img src="hh.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title"></h5>
-            <p class="card-text"><b>Haikyuu</b></p>
-            <a href="#" class="btn btn-dark" data-bs-target="#WatchModal" data-bs-toggle="modal">Watch</a>
-
-            <div class="modal" id="WatchModal" tabindex="-1" style="background-color:#b3b3b3;">
-                <div class="modal-dialog">
-                    <div class="modal-content" style="background-color: #333333; color: #f2f2f2;">
-                        <div class="modal-header">
-                            <h5 class="modal-title">Haikyu Trailer</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <a href="haikyu.jpg"></a>
-                        </div>
-                        <div>
-                            <video width="490" height="240" controls>
-                                <source src="https://youtu.be/q2FCfgT-Fm8" type="video/mp4">
-                                <source src="https://youtu.be/q2FCfgT-Fm8" type="video/ogg">
-                                Your movie doesn't support the video.
-                            </video>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-dark
-                                                data-bs-dismiss=" modal">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <a href="#" class="btn btn-secondary">See More</a>
+            <h4>
+                Most Popular Anime
+            </h4>
         </div>
+        <div class="card mt_24" style="width: 18rem;" style="background-color: #333333;">
+            <img src="hh.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p class="card-text"><b>Haikyuu</b></p>
+                <a href="#" class="btn btn-dark" data-bs-target="#WatchModal" data-bs-toggle="modal">Watch</a>
 
-        <div style="display: flex;">
-            <div class="card mt_24" style="width: 18rem;" style="background-color: #333333;">
-                <img src="rimuru.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title"></h5>
-                    <p class="card-text"><b>Tensei Shitara Slime Datta Ken</b></p>
-                    <a href="#" class="btn btn-dark" data-bs-target="#WatchModal" data-bs-toggle="modal">Watch</a>
-
-                    <div class="modal" id="WatchModal" tabindex="-1" style="background-color:#b3b3b3;">
-                        <div class="modal-dialog">
-                            <div class="modal-content" style="background-color: #333333; color: #f2f2f2;">
-                                <div class="modal-header">
-                                    <h5 class="modal-title">Tensei Shitara Slime Datta Ken</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <a href="rimuru.webp"></a>
-                                </div>
-                                <div>
-                                    <video width="490" height="240" controls>
-                                        <source src="https://youtu.be/q2FCfgT-Fm8" type="video/mp4">
-                                        <source src="https://youtu.be/q2FCfgT-Fm8" type="video/ogg">
-                                        Your movie doesn't support the video.
-                                    </video>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-dark
-                                                    data-bs-dismiss=" modal">Close</button>
-                                </div>
+                <div class="modal" id="WatchModal" tabindex="-1" style="background-color:#b3b3b3;">
+                    <div class="modal-dialog">
+                        <div class="modal-content" style="background-color: #333333; color: #f2f2f2;">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Haikyu Trailer</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <a href="haikyu.jpg"></a>
+                            </div>
+                            <div>
+                                <video width="490" height="240" controls>
+                                    <source src="https://youtu.be/q2FCfgT-Fm8" type="video/mp4">
+                                    <source src="https://youtu.be/q2FCfgT-Fm8" type="video/ogg">
+                                    Your movie doesn't support the video.
+                                </video>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-dark
+                                                data-bs-dismiss=" modal">Close</button>
                             </div>
                         </div>
                     </div>
-
-                    <a href="#" class="btn btn-secondary">See More</a>
                 </div>
+
+                <a href="#" class="btn btn-secondary">See More</a>
+            </div>
+
+            <div style="display: flex;">
                 <div class="card mt_24" style="width: 18rem;" style="background-color: #333333;">
-                    <img src="jjk 0.webp" class="card-img-top" alt="...">
+                    <img src="rimuru.webp" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title"></h5>
-                        <p class="card-text"><b>Jujutsu Kaisen 0 (2022)</b></p>
+                        <p class="card-text"><b>Tensei Shitara Slime Datta Ken</b></p>
                         <a href="#" class="btn btn-dark" data-bs-target="#WatchModal" data-bs-toggle="modal">Watch</a>
 
                         <div class="modal" id="WatchModal" tabindex="-1" style="background-color:#b3b3b3;">
                             <div class="modal-dialog">
                                 <div class="modal-content" style="background-color: #333333; color: #f2f2f2;">
                                     <div class="modal-header">
-                                        <h5 class="modal-title">Jujutsu Kaisen 0</h5>
+                                        <h5 class="modal-title">Tensei Shitara Slime Datta Ken</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                     </div>
@@ -370,7 +354,7 @@
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-dark
-                                                        data-bs-dismiss=" modal">Close</button>
+                                                    data-bs-dismiss=" modal">Close</button>
                                     </div>
                                 </div>
                             </div>
@@ -378,10 +362,46 @@
 
                         <a href="#" class="btn btn-secondary">See More</a>
                     </div>
+                    <div class="card mt_24" style="width: 18rem;" style="background-color: #333333;">
+                        <img src="jjk 0.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text"><b>Jujutsu Kaisen 0 (2022)</b></p>
+                            <a href="#" class="btn btn-dark" data-bs-target="#WatchModal"
+                                data-bs-toggle="modal">Watch</a>
+
+                            <div class="modal" id="WatchModal" tabindex="-1" style="background-color:#b3b3b3;">
+                                <div class="modal-dialog">
+                                    <div class="modal-content" style="background-color: #333333; color: #f2f2f2;">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Jujutsu Kaisen 0</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <a href="rimuru.webp"></a>
+                                        </div>
+                                        <div>
+                                            <video width="490" height="240" controls>
+                                                <source src="https://youtu.be/q2FCfgT-Fm8" type="video/mp4">
+                                                <source src="https://youtu.be/q2FCfgT-Fm8" type="video/ogg">
+                                                Your movie doesn't support the video.
+                                            </video>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-dark
+                                                        data-bs-dismiss=" modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="#" class="btn btn-secondary">See More</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
 </body>
 
